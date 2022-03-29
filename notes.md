@@ -1,0 +1,1 @@
+This file contains the notes for git and Shell scripting
