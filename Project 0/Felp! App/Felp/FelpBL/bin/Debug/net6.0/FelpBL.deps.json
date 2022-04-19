@@ -1,0 +1,61 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "FelpBL/1.0.0": {
+        "dependencies": {
+          "FelpDL": "1.0.0",
+          "FelpUI": "1.0.0"
+        },
+        "runtime": {
+          "FelpBL.dll": {}
+        }
+      },
+      "FelpDL/1.0.0": {
+        "runtime": {
+          "FelpDL.dll": {}
+        }
+      },
+      "FelpModels/1.0.0": {
+        "runtime": {
+          "FelpModels.dll": {}
+        }
+      },
+      "FelpUI/1.0.0": {
+        "dependencies": {
+          "FelpDL": "1.0.0",
+          "FelpModels": "1.0.0"
+        },
+        "runtime": {
+          "FelpUI.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "FelpBL/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "FelpDL/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "FelpModels/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "FelpUI/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

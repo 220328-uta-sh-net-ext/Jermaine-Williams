@@ -1,0 +1,12 @@
+D:\Felp! App\Felp\FelpModels\bin\Debug\net6.0\FelpModels.deps.json
+D:\Felp! App\Felp\FelpModels\bin\Debug\net6.0\FelpModels.dll
+D:\Felp! App\Felp\FelpModels\bin\Debug\net6.0\FelpModels.pdb
+D:\Felp! App\Felp\FelpModels\obj\Debug\net6.0\FelpModels.csproj.AssemblyReference.cache
+D:\Felp! App\Felp\FelpModels\obj\Debug\net6.0\FelpModels.GeneratedMSBuildEditorConfig.editorconfig
+D:\Felp! App\Felp\FelpModels\obj\Debug\net6.0\FelpModels.AssemblyInfoInputs.cache
+D:\Felp! App\Felp\FelpModels\obj\Debug\net6.0\FelpModels.AssemblyInfo.cs
+D:\Felp! App\Felp\FelpModels\obj\Debug\net6.0\FelpModels.csproj.CoreCompileInputs.cache
+D:\Felp! App\Felp\FelpModels\obj\Debug\net6.0\FelpModels.dll
+D:\Felp! App\Felp\FelpModels\obj\Debug\net6.0\refint\FelpModels.dll
+D:\Felp! App\Felp\FelpModels\obj\Debug\net6.0\FelpModels.pdb
+D:\Felp! App\Felp\FelpModels\obj\Debug\net6.0\ref\FelpModels.dll
