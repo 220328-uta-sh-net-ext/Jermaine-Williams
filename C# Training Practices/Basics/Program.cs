@@ -85,13 +85,22 @@
 
 //     Console.WriteLine(String.Join(" ", c));
 
-string name = "Jermaine";
+List <int> candles = new List <int>();
 
-for(int i = name.Length - 1; i >= 0; i--)
-{
-    System.Console.WriteLine(name[i]);
-}
+candles.Add(3);
+candles.Add(3);
+candles.Add(3);
+candles.Add(3);
 
+int x  = 0;
+candles.Sort();
+
+for(int i = 0; i < candles.Count; i++){
+    if(candles[i] == candles.Max()){
+        x++;
+    }
+
+}   Console.WriteLine(x);
 
 
 
