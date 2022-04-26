@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Felp! App\\Felp\\FelpModels\\FelpModels.csproj": {}
+    "D:\\Revature\\dotnet-Training-220328\\Jermaine-Williams\\Project 0\\Felp! App\\Felp\\FelpModels\\FelpModels.csproj": {}
   },
   "projects": {
-    "D:\\Felp! App\\Felp\\FelpModels\\FelpModels.csproj": {
+    "D:\\Revature\\dotnet-Training-220328\\Jermaine-Williams\\Project 0\\Felp! App\\Felp\\FelpModels\\FelpModels.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Felp! App\\Felp\\FelpModels\\FelpModels.csproj",
+        "projectUniqueName": "D:\\Revature\\dotnet-Training-220328\\Jermaine-Williams\\Project 0\\Felp! App\\Felp\\FelpModels\\FelpModels.csproj",
         "projectName": "FelpModels",
-        "projectPath": "D:\\Felp! App\\Felp\\FelpModels\\FelpModels.csproj",
+        "projectPath": "D:\\Revature\\dotnet-Training-220328\\Jermaine-Williams\\Project 0\\Felp! App\\Felp\\FelpModels\\FelpModels.csproj",
         "packagesPath": "C:\\Users\\icrbo\\.nuget\\packages\\",
-        "outputPath": "D:\\Felp! App\\Felp\\FelpModels\\obj\\",
+        "outputPath": "D:\\Revature\\dotnet-Training-220328\\Jermaine-Williams\\Project 0\\Felp! App\\Felp\\FelpModels\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -1,7 +1,43 @@
-﻿using FelpUI;
+﻿global using Serilog;
+using FelpUI;
+
+//Log.Logger = new LoggerConfiguration();
 
 IMenu menu = new MainMenu();
 
+bool repeat = true;
+
 menu.Display();
 
-menu.UserChoice();
+while (repeat) //while repeat is true, display will loop until it's false
+{
+    string userinput = menu.UserChoice();
+
+    switch (userinput)
+    {
+
+        case "NewUser":
+            Console.WriteLine("AddNewUser Method");
+            break;
+
+        case "AddRest":
+            RestaurantOperations.GetAllRestaurants();
+            break;
+
+        case "ReviewRest":
+            Console.WriteLine("AddReview Method");
+            break;
+
+        case "AdminAccess":
+            Console.WriteLine("Call AddAdmin method");
+            break;
+
+        case "Exit":
+            repeat = false;
+            break;
+
+        case "MainMenu":
+            menu = new MainMenu();
+            break;
+    } 
+}

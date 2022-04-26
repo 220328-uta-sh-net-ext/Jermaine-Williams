@@ -8,8 +8,8 @@ namespace FelpUI
 {
     public interface IMenu
     {
-        void Display();
+        void Display(); //will display the menu and user choices visually in the terminal 
 
-        void UserChoice();
+        string UserChoice(); //will record the user's choise and change the menu based on that choice 
     }
 }

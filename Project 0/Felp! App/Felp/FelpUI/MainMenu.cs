@@ -1,4 +1,7 @@
-﻿namespace FelpUI
+﻿using FelpModels;
+
+
+namespace FelpUI
 {
     class MainMenu : IMenu
     {
@@ -15,83 +18,38 @@
             Console.WriteLine("Press <0> to exit the app"); Thread.Sleep(1000);
         }
 
-        public void UserChoice()
+        public string UserChoice()
         {
-            string x = Console.ReadLine();
-            
-            Console.Clear();
+           string userinput = Console.ReadLine();
 
-            switch (x)
+            switch (userinput)
             {
                 case "1":
-                    Console.WriteLine("Please enter your full name:");
-
-                    string fullname = Console.ReadLine();
-
-                    Console.WriteLine("Enter your email:");
-
-                    string email = Console.ReadLine();
-
-                    if (!email.Contains("@") && !email.Contains(".com"))
-                    {
-                        Console.WriteLine("Invalid email\n, Please enter your email in the correct format: johndoe@jd.com"); Thread.Sleep(2000);
-                        Console.WriteLine("Please re-enter your email:");
-                        Console.ReadLine();
-                    }
-                    else
-                    {
-                        Console.WriteLine(email);
-                    }
-
+                    return "NewUser";
                     break;
-
+                
                 case "2":
-
-                    Console.WriteLine("2  block");
-
+                    return "AddRest";
                     break;
 
                 case "3":
-
-                    Console.WriteLine("3 block");
-
+                    return "ReviewRest";
                     break;
 
                 case "4":
-
-                    Console.WriteLine("This area is only for Administrators only."); Thread.Sleep(2000);
-                    Console.WriteLine("To continue, please enter the access code, then press enter:");
-
-                    var accesscode = Console.ReadLine();
-
-                    Console.WriteLine(accesscode);
-
+                    return "AdminAccess";
                     break;
 
                 case "0":
-
-                    Console.WriteLine("Are you sure you would like to exit?"); Thread.Sleep(2000);
-                    Console.WriteLine("<Y> or <N> ?");
-
-                    var yn = Console.ReadLine();
-
-                    if (yn == "Y" || yn == "y")
-                    {
-                        Console.WriteLine("Thank you for visiting the Felp App! We hope you enjoyed your experience"); Thread.Sleep(2000);
-                        Console.WriteLine("Goodbye~ <3");
-                    }
-                    if (yn == "N" || yn == "n")
-                    {
-                        Console.WriteLine("Going back to the main menu"); Thread.Sleep(2000);
-                        Console.Clear();
-                        Display();
-                    }
-                    else
-                    {
-                        Console.WriteLine();
-                    }
+                    return "Exit";
                     break;
-
+                
+                default:
+                    Console.WriteLine("Please enter a vaild response");
+                    Console.WriteLine("Press <Enter> to continue");
+                    Console.ReadLine();
+                    return "MainMenu";
+                    break;
             }
         }
     }

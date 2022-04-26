@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace FelpModels
 {
-    public class Admin : IUser
+    public class Admin 
     {
         private const string ac = "123456";
         public string Name { get; set; }

@@ -7,7 +7,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\FelpDL\FelpDL.csproj" />
     <ProjectReference Include="..\FelpUI\FelpUI.csproj" />
   </ItemGroup>
 

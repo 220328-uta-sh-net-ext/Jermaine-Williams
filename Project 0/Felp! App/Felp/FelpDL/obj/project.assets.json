@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    "net6.0": {}
+    "net6.0": {
+      "FelpModels/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/FelpModels.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/FelpModels.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "FelpModels/1.0.0": {
+      "type": "project",
+      "path": "../FelpModels/FelpModels.csproj",
+      "msbuildProject": "../FelpModels/FelpModels.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net6.0": []
+    "net6.0": [
+      "FelpModels >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\icrbo\\.nuget\\packages\\": {},
@@ -14,11 +33,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Felp! App\\Felp\\FelpDL\\FelpDL.csproj",
+      "projectUniqueName": "D:\\Revature\\dotnet-Training-220328\\Jermaine-Williams\\Project 0\\Felp! App\\Felp\\FelpDL\\FelpDL.csproj",
       "projectName": "FelpDL",
-      "projectPath": "D:\\Felp! App\\Felp\\FelpDL\\FelpDL.csproj",
+      "projectPath": "D:\\Revature\\dotnet-Training-220328\\Jermaine-Williams\\Project 0\\Felp! App\\Felp\\FelpDL\\FelpDL.csproj",
       "packagesPath": "C:\\Users\\icrbo\\.nuget\\packages\\",
-      "outputPath": "D:\\Felp! App\\Felp\\FelpDL\\obj\\",
+      "outputPath": "D:\\Revature\\dotnet-Training-220328\\Jermaine-Williams\\Project 0\\Felp! App\\Felp\\FelpDL\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -38,7 +57,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\Revature\\dotnet-Training-220328\\Jermaine-Williams\\Project 0\\Felp! App\\Felp\\FelpModels\\FelpModels.csproj": {
+              "projectPath": "D:\\Revature\\dotnet-Training-220328\\Jermaine-Williams\\Project 0\\Felp! App\\Felp\\FelpModels\\FelpModels.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

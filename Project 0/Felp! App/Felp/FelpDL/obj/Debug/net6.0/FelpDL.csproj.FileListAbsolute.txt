@@ -10,3 +10,18 @@ D:\Felp! App\Felp\FelpDL\obj\Debug\net6.0\FelpDL.dll
 D:\Felp! App\Felp\FelpDL\obj\Debug\net6.0\refint\FelpDL.dll
 D:\Felp! App\Felp\FelpDL\obj\Debug\net6.0\FelpDL.pdb
 D:\Felp! App\Felp\FelpDL\obj\Debug\net6.0\ref\FelpDL.dll
+D:\Revature\dotnet-Training-220328\Jermaine-Williams\Project 0\Felp! App\Felp\FelpDL\bin\Debug\net6.0\FelpDL.deps.json
+D:\Revature\dotnet-Training-220328\Jermaine-Williams\Project 0\Felp! App\Felp\FelpDL\bin\Debug\net6.0\FelpDL.dll
+D:\Revature\dotnet-Training-220328\Jermaine-Williams\Project 0\Felp! App\Felp\FelpDL\bin\Debug\net6.0\FelpDL.pdb
+D:\Revature\dotnet-Training-220328\Jermaine-Williams\Project 0\Felp! App\Felp\FelpDL\obj\Debug\net6.0\FelpDL.csproj.AssemblyReference.cache
+D:\Revature\dotnet-Training-220328\Jermaine-Williams\Project 0\Felp! App\Felp\FelpDL\obj\Debug\net6.0\FelpDL.GeneratedMSBuildEditorConfig.editorconfig
+D:\Revature\dotnet-Training-220328\Jermaine-Williams\Project 0\Felp! App\Felp\FelpDL\obj\Debug\net6.0\FelpDL.AssemblyInfoInputs.cache
+D:\Revature\dotnet-Training-220328\Jermaine-Williams\Project 0\Felp! App\Felp\FelpDL\obj\Debug\net6.0\FelpDL.AssemblyInfo.cs
+D:\Revature\dotnet-Training-220328\Jermaine-Williams\Project 0\Felp! App\Felp\FelpDL\obj\Debug\net6.0\FelpDL.csproj.CoreCompileInputs.cache
+D:\Revature\dotnet-Training-220328\Jermaine-Williams\Project 0\Felp! App\Felp\FelpDL\obj\Debug\net6.0\FelpDL.dll
+D:\Revature\dotnet-Training-220328\Jermaine-Williams\Project 0\Felp! App\Felp\FelpDL\obj\Debug\net6.0\refint\FelpDL.dll
+D:\Revature\dotnet-Training-220328\Jermaine-Williams\Project 0\Felp! App\Felp\FelpDL\obj\Debug\net6.0\FelpDL.pdb
+D:\Revature\dotnet-Training-220328\Jermaine-Williams\Project 0\Felp! App\Felp\FelpDL\obj\Debug\net6.0\ref\FelpDL.dll
+D:\Revature\dotnet-Training-220328\Jermaine-Williams\Project 0\Felp! App\Felp\FelpDL\bin\Debug\net6.0\FelpModels.dll
+D:\Revature\dotnet-Training-220328\Jermaine-Williams\Project 0\Felp! App\Felp\FelpDL\bin\Debug\net6.0\FelpModels.pdb
+D:\Revature\dotnet-Training-220328\Jermaine-Williams\Project 0\Felp! App\Felp\FelpDL\obj\Debug\net6.0\FelpDL.csproj.CopyComplete
