@@ -21,7 +21,7 @@ while (repeat) //while repeat is true, display will loop until it's false
             break;
 
         case "AddRest":
-            RestaurantOperations.GetAllRestaurants();
+            RestaurantOperations.AddDummyRestaurant();
             break;
 
         case "ReviewRest":

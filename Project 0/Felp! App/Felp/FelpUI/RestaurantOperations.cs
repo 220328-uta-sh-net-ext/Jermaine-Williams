@@ -20,10 +20,22 @@ namespace FelpUI
         {
             Restaurant restaurant1 = new Restaurant()
             {
-                Name = "McDonalds",
-                Location = "Florida"
-
+                Name = "Burger King",
+                Location = "Florida",
+                Review = new List<Review>()
+                {
+                    new Review()
+                    {
+                        _foodrating = 4,
+                        _cleanrating = 4,
+                        _returnrating = 4,
+                        _servicerating = 4,
+                        _viberating = 4,
+                    }
+                }
             };
+
+            repo.AddRestaurant(restaurant1);
         }
     }
 }

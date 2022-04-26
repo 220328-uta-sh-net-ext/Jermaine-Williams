@@ -12,7 +12,7 @@ namespace FelpUI
 
             Console.WriteLine("Please select from the following options:"); Thread.Sleep(2000);
             Console.WriteLine("Press <1> to make a new account"); Thread.Sleep(1000);
-            Console.WriteLine("Press <2> to make an Admin account"); Thread.Sleep(1000);
+            Console.WriteLine("Press <2> to add a restaurant to the system"); Thread.Sleep(1000);
             Console.WriteLine("Press <3> to review a restaurant"); Thread.Sleep(1000);
             Console.WriteLine("Press <4> for Admin access"); Thread.Sleep(1000);
             Console.WriteLine("Press <0> to exit the app"); Thread.Sleep(1000);
