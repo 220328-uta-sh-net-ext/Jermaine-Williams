@@ -1,24 +1,43 @@
 ﻿using FelpModels;
+using FelpDL;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
 namespace FelpUI
 {
-    public class AddUser : IMenu
+    public class AddUser 
     {
-        private static User newUser = new User(); //User is from your Models, newUser is the name of your User object
+        public static User newUser = new User(); //User is from your Models, newUser is the name of your User object
 
-        public void Display()
+        //public void Display()
+        //{
+        //    Console.WriteLine("Enter your infomation below to make a new account:");
+        //    Console.WriteLine("Your Full Name");
+        //    Console.WriteLine("Your Username");
+        //    Console.WriteLine("Your Email");
+        //    Console.WriteLine("Press <0> to go back to the main menu");
+        //}
+
+        public static void AddingUser()
         {
             Console.WriteLine("Enter your infomation below to make a new account:");
-            Console.WriteLine("<1> Full name " + newUser.Fullname);
-            Console.WriteLine("<2> Username " + newUser.Username);
-            Console.WriteLine("<3> Email " + newUser.Email);
-            Console.WriteLine("<4> Password " + newUser.Password);
+            Console.WriteLine("Your Full Name");
+            Console.WriteLine("Your Username");
+            Console.WriteLine("Your Email");
             Console.WriteLine("Press <0> to go back to the main menu");
+
+            string fullname = Console.ReadLine();
+            string username = Console.ReadLine();
+            string email = Console.ReadLine();
+
+            Console.WriteLine(fullname);
+            Console.WriteLine(username);
+            Console.WriteLine(email);
+            Console.WriteLine("If this infomation is correct Press <1>");
         }
 
         public string UserChoice()
@@ -28,37 +47,34 @@ namespace FelpUI
             switch (userinput)
             {
                 case "1":
-
-                    return "Enter your fullname";
-                    
+                    return "1";
                     break;
 
-                case "2":
-
-                    return "Enter the username you would like to use         ";
-
-                    break;
-
-                case "3":
-
-                    return "Enter your email";
-
-                    break;
-
-                case "4":
-
-                    return "Enter the password you would like to use for this account";
-
+                case "0":
+                    return "MainMenu";
                     break;
 
                 default:
-
-                    return " ";
-                    
+                    Console.WriteLine("Please enter a vaild response");
+                    Console.WriteLine("Press <Enter> to continue");
+                    Console.ReadLine();
+                    return "MainMenu";
                     break;
             }
-
-
         }
+
+        //string userinput = Console.ReadLine();
+
+        //    switch (userinput)
+        //    {
+        //        case "1":
+        //            Console.WriteLine();
+        //            break;
+
+        //        case "0":
+        //            return "MainMenu"
+        //            break;
+        //    }
+
     }
 }

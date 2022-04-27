@@ -17,7 +17,7 @@ while (repeat) //while repeat is true, display will loop until it's false
     {
 
         case "NewUser":
-            Console.WriteLine("AddNewUser Method");
+            AddUser.AddingUser();
             break;
 
         case "AddRest":

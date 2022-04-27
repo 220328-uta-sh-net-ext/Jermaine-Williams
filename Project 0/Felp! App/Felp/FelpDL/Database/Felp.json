@@ -1,10 +1,18 @@
 {
-  "exclude": [
-    "**/bin",
-    "**/bower_components",
-    "**/jspm_packages",
-    "**/node_modules",
-    "**/obj",
-    "**/platforms"
+  "Name": "Taco Bell",
+  "Location": "Texas",
+  "Review": [ 
+    {
+      "_foodrating" "="
+      3,
+      "_cleanrating" "="
+      4,
+      "_returnrating" "="
+      4,
+      "_servicerating" "="
+      4,
+      "_viberating" "="
+      4
+    }
   ]
 }
