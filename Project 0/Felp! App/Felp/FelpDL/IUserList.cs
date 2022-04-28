@@ -13,13 +13,13 @@ namespace FelpDL
         /// add a user to database
         /// </summary>
         /// <param name="user"></param>
-        /// <returns>the restaurant added</returns>
+        /// <returns>the user added</returns>
         User AddNewUser(User user);
 
         /// <summary>
         /// will return all the users from the database
         /// </summary>
-        /// <returns>returns a collection of restaurants as generic list</returns>
+        /// <returns>returns a collection of user as generic list</returns>
         List<User> GetAllUsers();
     }
 

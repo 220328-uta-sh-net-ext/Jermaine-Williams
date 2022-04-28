@@ -85,22 +85,18 @@
 
 //     Console.WriteLine(String.Join(" ", c));
 
-List <int> candles = new List <int>();
-
-candles.Add(3);
-candles.Add(3);
-candles.Add(3);
-candles.Add(3);
-
-int x  = 0;
-candles.Sort();
-
-for(int i = 0; i < candles.Count; i++){
-    if(candles[i] == candles.Max()){
-        x++;
+//
+{
+    int i;
+    int b = 8, a = 32;
+    for (i = 0; i <= 10; i++)
+    {
+        if ((a / b * 2) == 2)
+            Console.Write(i + " ");
+        else if (i != 4)
+            Console.Write(i + " ");
+        else
+            break;
     }
-
-}   Console.WriteLine(x);
-
-
+}
 

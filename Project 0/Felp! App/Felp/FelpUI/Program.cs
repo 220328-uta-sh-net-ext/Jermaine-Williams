@@ -21,16 +21,16 @@ while (repeat) //while repeat is true, display will loop until it's false
             break;
 
         case "AddRest":
-            RestaurantOperations.AddDummyRestaurant();
+            AddRest.AddingRest();
             break;
 
         case "ReviewRest":
             Console.WriteLine("AddReview Method");
             break;
 
-        case "AdminAccess":
-            Console.WriteLine("Call AddAdmin method");
-            break;
+        //case "AdminAccess":
+        //    Console.WriteLine("Call AddAdmin method");
+        //    break;
 
         case "Exit":
             repeat = false;

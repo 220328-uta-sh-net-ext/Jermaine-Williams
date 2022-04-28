@@ -19,7 +19,7 @@ namespace FelpModels
                 if (value >= 1 && value <= 5)
                     _foodrating = value;
                 else
-                    throw new Exception("You can't rate a restaurant's food lower than 1 or higher than 5");
+                    Console.WriteLine("You can't rate a restaurant's food lower than 1 or higher than 5");
             }
         }
 
@@ -33,7 +33,7 @@ namespace FelpModels
                 if (value >= 1 && value <= 5)
                     _servicerating = value;
                 else
-                    throw new Exception("You can't rate a restaurant's service lower than 1 or higher than 5");
+                    Console.WriteLine("You can't rate a restaurant's service lower than 1 or higher than 5");
             }
         }
 
@@ -47,7 +47,7 @@ namespace FelpModels
                 if (value >= 1 && value <= 5)
                     _cleanrating = value;
                 else
-                    throw new Exception("You can't rate then cleanliness a restaurant lower than 1 or higher than 5");
+                    Console.WriteLine("You can't rate then cleanliness a restaurant lower than 1 or higher than 5");
             }
         }
 
@@ -61,7 +61,7 @@ namespace FelpModels
                 if (value >= 1 && value <= 5)
                     _viberating = value;
                 else
-                    throw new Exception("You can't rate a restaurant's atmosphere lower than 1 or higher than 5");
+                    Console.WriteLine("You can't rate a restaurant's atmosphere lower than 1 or higher than 5");
             }
         }
 
@@ -75,7 +75,7 @@ namespace FelpModels
                 if (value >= 1 && value <= 5)
                     _returnrating = value;
                 else
-                    throw new Exception("You can't rate a restaurant's atmosphere lower than 1 or higher than 5");
+                    Console.WriteLine("You can't rate a restaurant's atmosphere lower than 1 or higher than 5");
             }
         }
 
