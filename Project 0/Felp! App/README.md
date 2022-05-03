@@ -1,2 +1,1 @@
-# p0-template
-restaurant reviews template
+This is the Felp! App Version 2~
