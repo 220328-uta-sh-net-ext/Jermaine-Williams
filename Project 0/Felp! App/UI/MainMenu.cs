@@ -3,8 +3,11 @@ using DL;
 namespace UI;
 public class MainMenu : IMenu
 {
+    
     public void Display()
     {
+        Console.Clear();
+
         Console.WriteLine("Hello, and Welcome to the Felp! App");
         Console.WriteLine("Where you can write, review, and search you next favorite resturants!");// Thread.Sleep(5000);
 
@@ -15,10 +18,12 @@ public class MainMenu : IMenu
         Console.WriteLine("Press <4> to review a restaurant");// Thread.Sleep(1000);
         Console.WriteLine("Press <5> for Admin Access");
         Console.WriteLine("Press <0> to exit the app");// Thread.Sleep(1000);
+
     }
 
     public string UserChoice()
     {
+
         string userinput = Console.ReadLine();
 
         switch (userinput)

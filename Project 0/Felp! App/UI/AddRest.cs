@@ -10,6 +10,11 @@ namespace UI
 {
     internal class AddRest : IMenu
     {
+        private readonly IRRBL _bl;
+        public AddRest(IRRBL bl)
+        {
+            _bl = bl;
+        }
         private static Restaurant newRestaurant = new Restaurant();
         private RestSQLRepo RestRepo = new RestSQLRepo();
 
@@ -55,7 +60,7 @@ namespace UI
                     return "addrest";
 
                 case "5":
-                    
+                    RestRepo.AddRestaurant(newRestaurant);
                     return "mainmenu";
 
                 case "0":

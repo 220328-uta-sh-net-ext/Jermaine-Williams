@@ -16,7 +16,7 @@ namespace DL
         }
         public void AddRestaurant(Restaurant restaurantToAdd)
         {
-            string commandString = "INSERT INTO Restaurant (Name, City, State, RestID) VALUES (@Name, @City, @state, @RestID)";
+            string commandString = "INSERT INTO Restaurants (Name, City, State, RestID) VALUES (@Name, @City, @State, @RestID)";
 
             using SqlConnection connection = new(connectionString);
             using SqlCommand command = new(commandString, connection);
@@ -33,25 +33,24 @@ namespace DL
 
         public void AddReview(int restaurantID, Review reviewToAdd)
         {
-            string commandString = "INSERT INTO Review (ReviewID, Rating, RestID, Note) VALUES (@ReviewID, @Rating, @RestID, @Note)";
+            string commandString = "INSERT INTO Review (ReviewID, Rating, RestaurantID, Note) VALUES (@ReviewID, @Rating, @RestaurantID, @Note)";
 
             using SqlConnection connection = new(connectionString);
             using SqlCommand command = new(commandString, connection);
             connection.Open();
             command.Parameters.AddWithValue("@ReviewID", reviewToAdd.ReviewID);
             command.Parameters.AddWithValue("@Rating", reviewToAdd.Rating);
-            command.Parameters.AddWithValue("@RestID", reviewToAdd.RestaurantID);
+            command.Parameters.AddWithValue("@RestaurantID", reviewToAdd.RestaurantID);
             command.Parameters.AddWithValue("@Note", reviewToAdd.Note);
             command.ExecuteNonQuery();
             using SqlDataReader reader = command.ExecuteReader();
 
-            Console.WriteLine(restaurantID);
             Console.WriteLine(reviewToAdd);
         }
 
         public List<Restaurant> GetAllRestaurants()
         {
-            string commandString = "SELECT Name, City, State, RestID from Restaurant";
+            string commandString = "SELECT Name, City, State, RestID from Restaurants";
 
             using SqlConnection connection = new(connectionString);
             using SqlCommand command = new(commandString, connection);
@@ -73,7 +72,7 @@ namespace DL
 
         public List<Restaurant> SearchRestaurants(string searchTerm)
         {
-            string commandString = "SELECT Name, City, State, RestID from Restaurant";
+            string commandString = "SELECT Name, City, State, RestID from Restaurants";
 
             using SqlConnection connection = new(connectionString);
             using SqlCommand command = new(commandString, connection);

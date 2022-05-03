@@ -28,11 +28,11 @@ while (repeat) //while repeat is true, display will loop until it's false
             break;
 
         case "addrest":
-            menu = new AddRest();
+            menu = new AddRest(bl);
             break;
 
         case "reviewrest":
-            //menu = new ReviewMenu(bl);
+            menu = new AddReview(bl);
             break;
 
         case "adminaccess":
