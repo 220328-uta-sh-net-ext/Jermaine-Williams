@@ -33,12 +33,12 @@ public class AddReview : IMenu
         switch (userInput)
         {
             case "1":
-                Console.WriteLine("Please a number to be an ID for you review: ");
+                Console.WriteLine("Please a number to be an ID for your review: ");
                 newReview.ReviewID = Convert.ToInt32(Console.ReadLine());
                 return "reviewrest";
 
             case "2":
-                Console.WriteLine("Please rate the restaurant bwtween 1 and 5: ");
+                Console.WriteLine("Please rate the restaurant between 1 and 5: ");
                 newReview.Rating = Convert.ToInt32(Console.ReadLine());
                 return "reviewrest";
 
