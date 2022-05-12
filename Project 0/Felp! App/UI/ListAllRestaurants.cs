@@ -8,6 +8,9 @@ public class ListAllRestaurants : IMenu
     {
         _bl = bl;
     }
+
+    private static Restaurant newRestaurant = new Restaurant();
+    private RestSQLRepo listRestRepo = new RestSQLRepo();
     public void Display()
     {
         //Console.WriteLine("Press <1> to add a restaurant to the system");
@@ -16,22 +19,18 @@ public class ListAllRestaurants : IMenu
 
     public string UserChoice()
     {
-        Console.WriteLine("Press <1> to add a restaurant to the system");
-        Console.WriteLine("Press <2> to show a list of all the restaurants in the system");
-        Console.WriteLine("Press <3> to search for a restaurant of your choosing");
+        Console.WriteLine("Press <1> to show a list of all the restaurants in the system");
+        Console.WriteLine("Press <0> to search for a restaurant of your choosing");
 
         string userInput = Console.ReadLine();
         switch (userInput)
         {
             case "1":
-                return "addrest method";
+                listRestRepo.GetAllRestaurants();
+                return "mainmenu";
                 break;
 
-            case "2":
-                return "getallrest method";
-                break;
-
-            case "3":
+            case "0":
                 return "searchrest method";
                 break;
 

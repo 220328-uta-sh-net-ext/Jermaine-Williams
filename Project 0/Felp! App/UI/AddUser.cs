@@ -10,6 +10,7 @@ namespace UI
     internal class AddUser : IMenu
     {
         private static User newUser = new User();
+        private UserRepo urepo = new UserRepo();
         private UserSQLRepo userRepo = new UserSQLRepo();
         public void Display()
         {
@@ -53,7 +54,7 @@ namespace UI
                     return "adduser";
 
                 case "4":
-                    userRepo.AddUser(newUser);
+                    urepo.AddUser(newUser);
                     return "mainmenu";
 
                 case "0":

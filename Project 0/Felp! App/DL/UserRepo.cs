@@ -9,7 +9,7 @@ public class UserRepo : IUserRepo
     public UserRepo()
     { }
 
-    private string filePath = "../../../DL/Database/";
+    private string filePath = "../../../../DL/Database/";
     private string jsonString;
 
     public User AddUser(User newuser) //serialzation

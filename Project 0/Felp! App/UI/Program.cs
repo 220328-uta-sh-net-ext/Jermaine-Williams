@@ -1,5 +1,8 @@
 ﻿using UI;
 using DL;
+using Serilog;
+
+//Log.Logger = new LoggerConfiguration();
 
 IMenu menu = new MainMenu();
 IUserRepo urepo = new UserRepo();
