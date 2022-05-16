@@ -11,7 +11,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FelpV3DL", "FelpV3DL\FelpV3
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FelpV3Test", "FelpV3Test\FelpV3Test.csproj", "{E0E236BA-8118-46BB-9D96-B10F93FF405F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FelpV3UI", "FelpV3UI\FelpV3UI.csproj", "{21A6DED3-B065-4057-A7F8-700FC55461B5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FelpV3UI", "FelpV3UI\FelpV3UI.csproj", "{21A6DED3-B065-4057-A7F8-700FC55461B5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FelpV3API", "FlepV3API\FelpV3API.csproj", "{A32F5677-388B-4957-93A1-DC0235824054}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{21A6DED3-B065-4057-A7F8-700FC55461B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{21A6DED3-B065-4057-A7F8-700FC55461B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{21A6DED3-B065-4057-A7F8-700FC55461B5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A32F5677-388B-4957-93A1-DC0235824054}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A32F5677-388B-4957-93A1-DC0235824054}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A32F5677-388B-4957-93A1-DC0235824054}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A32F5677-388B-4957-93A1-DC0235824054}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
