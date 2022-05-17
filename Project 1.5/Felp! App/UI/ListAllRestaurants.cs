@@ -7,8 +7,8 @@ public class ListAllRestaurants : IMenu
 
     public void GetAllRestaurants()
     {
-        List<Restaurant> restaurants = repo.GetAllRestaurants();
-        foreach (Restaurant restaurant in restaurants)
+        List<Restaurant>? restaurants = repo.GetAllRestaurants();
+        foreach (Restaurant? restaurant in restaurants)
         {
             Console.WriteLine(restaurant);
             Console.WriteLine("=============");

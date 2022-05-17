@@ -8,6 +8,7 @@ IMenu menu = new MainMenu();
 ISQLRepo sqlrepo = new SQLRepo();
 ILogic bl = new Logic(sqlrepo);
 AddUser au = new AddUser();
+ListAllRestaurants listrest = new ListAllRestaurants(bl);
 
 
 bool repeat = true;
@@ -26,6 +27,7 @@ while (repeat) //while repeat is true, display will loop until it's false
             break;
 
         case "listrest":
+            listrest.GetAllRestaurants();
             menu = new ListAllRestaurants(bl);
             break;
 
