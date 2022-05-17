@@ -20,7 +20,7 @@ public interface ILogic// business logic interface for Restaurants/Reviews
 
     //List<User> GetAllUsers();// list of all the users that are already added to the repo
 
-    //public List<User> GetUsername(string Username); // will retrive a username from the database for the login
+    public List<User> GetUsername(string Username); // will retrive a username from the database for the login
 
 }
 
