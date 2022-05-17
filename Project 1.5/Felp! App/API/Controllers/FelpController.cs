@@ -21,30 +21,21 @@ namespace API.Controllers
         {
             this.dl = dl;
             this.memoryCache = memoryCache;
+            this.bl = bl;
         }
 
-        [HttpGet]
-        [ProducesResponseType(200, Type = typeof(List<Restaurant>))]
-        public ActionResult<List<Restaurant>> Get()
+        [HttpGet("name")]
+        [ProducesResponseType(200, Type = typeof(Restaurant))]
+        [ProducesResponseType(404)]
+        public ActionResult<List<Restaurant>> Get(string name)
         {
             List<Restaurant> rest = new List<Restaurant>();
-            try
-            {
-                if(!memoryCache.TryGetValue("restList", out rest))
-                {
-                    rest = bl.SearchRestaurants(stringname);
-                    memoryCache.Set("restList", rest, new TimeSpan(0, 1, 0));
-                }
-            }
-            catch (SqlException ex)
-            {
-                return NotFound(ex.Message);
-            }
-            catch (Exception ex)
-            {
-                return BadRequest(ex.Message);
-            }
-            return Ok(rest);
+
+            var sr = bl.SearchRestaurants(name);
+            if (sr.Count <= 0)
+                return NotFound($"Restaurant {name} is not found in the database.");
+            return Ok(sr);
+
         }
 
         [HttpPost]
@@ -54,9 +45,31 @@ namespace API.Controllers
         {
             if (user == null)
                 return BadRequest("Invaild user, try again with vaild values");
-            //dl.AddUser(user);
+            dl.AddUser(user);
             return CreatedAtAction("Get", user);
         }
+
+        [HttpPut]
+        [ProducesResponseType(StatusCodes.Status201Created)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        public ActionResult Post([FromBody] Restaurant rest)
+        {
+            if (rest == null)
+                return BadRequest("Invaild restaurant, try again with vaild values");
+            dl.AddRestaurant(rest);
+            return CreatedAtAction("Get", rest);
+        }
+
+        //[HttpPut]
+        //[ProducesResponseType(StatusCodes.Status201Created)]
+        //[ProducesResponseType(StatusCodes.Status400BadRequest)]
+        //public ActionResult Post([FromBody] Review review)
+        //{
+        //    if (review == null)
+        //        return BadRequest("Invaild review, try again with vaild values");
+        //    dl.AddReview(review);
+        //    return CreatedAtAction("Get", review);
+        //}
 
         //[HttpGet]
         //public List<Restaurant> Get()

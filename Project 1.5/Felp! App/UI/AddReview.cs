@@ -53,7 +53,7 @@ public class AddReview : IMenu
                 return "reviewrest";
 
             case "5":
-                restRepo.AddReview(restaurantID, newReview);
+                restRepo.AddReview(newReview);
                 return "mainmenu";
 
             case "0":

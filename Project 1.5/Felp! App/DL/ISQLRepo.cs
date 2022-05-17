@@ -9,7 +9,7 @@ public interface ISQLRepo// repository interface for the restaurant/reviews
 
     Restaurant AddRestaurant(Restaurant restaurantToAdd);// method to add a restaurant
 
-    Review AddReview(int restaurantID, Review reviewToAdd);// method to add a review
+    Review AddReview(Review reviewToAdd);// method to add a review
 
     List<Restaurant> SearchRestaurants(string searchTerm);// list with a method with a string parameter that'll be used to search restaurants 
 

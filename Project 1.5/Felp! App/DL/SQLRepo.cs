@@ -9,7 +9,7 @@ namespace DL
 {
     public class SQLRepo : ISQLRepo
     {
-        private const string connectionStringFilePath = "../../../../DL/Database/ConnectionString.txt";
+        private const string connectionStringFilePath = "../../../../Jermaine-Williams/Project 1.5/Felp! App/DL/Database/ConnectionString.txt";
         private readonly string connectionString;
 
         public SQLRepo()
@@ -84,7 +84,7 @@ namespace DL
             return restaurantToAdd;
         }
 
-        public Review AddReview(int restaurantID, Review reviewToAdd)
+        public Review AddReview(Review reviewToAdd)
         {
             string commandString = "INSERT INTO Review (ReviewID, Rating, RestID, Note) VALUES (@ReviewID, @Rating, @RestID, @Note)";
 

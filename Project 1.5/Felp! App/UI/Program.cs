@@ -27,7 +27,6 @@ while (repeat) //while repeat is true, display will loop until it's false
             break;
 
         case "listrest":
-            listrest.GetAllRestaurants();
             menu = new ListAllRestaurants(bl);
             break;
 
